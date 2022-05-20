@@ -1,7 +1,10 @@
 <?php
- $stringa = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis dolorem mollitia incidunt facere suscipit reiciendis."
+ 
+    $stringa = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis dolorem mollitia incidunt facere suscipit reiciendis.";
+    
+ 
     if(isset($_GET['censura'])){
-     $stampa = str_replace( $_GET['censura'], '???', $stringa);      
+     $stampa = str_replace( $_GET['censura'], '...', $stringa);      
     } else {
         $stampa = $stringa;
     }
